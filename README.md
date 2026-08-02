@@ -38,7 +38,7 @@ The goal of this project is to learn and build from scratch a uP based on its ow
 | :------- | :--------- | :-------------------- |
 | `0x1100` |    `JUMP`  |  JMP #DIR             |
 | `0x1101` |    `JZ`    |  JZ #DIR              |
-| `0x1110` |   `FREE`   |                       |
+| `0x1110` |   `JNZ`    |  JNZ #DIR             |
 | `0x1111` |   `FREE`   |                       |
 
 ### Bits distribution
