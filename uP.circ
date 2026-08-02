@@ -67,7 +67,25 @@
     <a name="circuit" val="main"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(1030,550)" name="Splitter">
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="1"/>
+      <a name="bit3" val="1"/>
+      <a name="bit4" val="1"/>
+      <a name="bit5" val="1"/>
+      <a name="bit6" val="1"/>
+      <a name="bit7" val="1"/>
+      <a name="incoming" val="8"/>
+    </comp>
+    <comp lib="0" loc="(1030,550)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="value_yReg"/>
+      <a name="width" val="8"/>
+    </comp>
     <comp lib="0" loc="(1040,740)" name="Ground"/>
+    <comp lib="0" loc="(1050,550)" name="Ground">
+      <a name="width" val="6"/>
+    </comp>
     <comp lib="0" loc="(1060,630)" name="Splitter">
       <a name="facing" val="west"/>
       <a name="fanout" val="8"/>
@@ -88,11 +106,6 @@
       <a name="facing" val="west"/>
       <a name="type" val="output"/>
       <a name="width" val="8"/>
-    </comp>
-    <comp lib="0" loc="(1110,540)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="label" val="Y"/>
-      <a name="width" val="2"/>
     </comp>
     <comp lib="0" loc="(1150,240)" name="Tunnel">
       <a name="label" val="XRegister"/>
@@ -301,6 +314,8 @@
     <wire from="(1040,690)" to="(1040,700)"/>
     <wire from="(1040,700)" to="(1040,710)"/>
     <wire from="(1040,710)" to="(1040,740)"/>
+    <wire from="(1050,530)" to="(1110,530)"/>
+    <wire from="(1050,540)" to="(1050,550)"/>
     <wire from="(1060,630)" to="(1100,630)"/>
     <wire from="(1070,380)" to="(1110,380)"/>
     <wire from="(1070,650)" to="(1070,800)"/>
@@ -308,7 +323,7 @@
     <wire from="(1100,300)" to="(1110,300)"/>
     <wire from="(1100,670)" to="(1100,830)"/>
     <wire from="(1110,260)" to="(1110,300)"/>
-    <wire from="(1110,510)" to="(1110,540)"/>
+    <wire from="(1110,510)" to="(1110,530)"/>
     <wire from="(1130,240)" to="(1150,240)"/>
     <wire from="(1130,490)" to="(1150,490)"/>
     <wire from="(1130,690)" to="(1130,840)"/>
