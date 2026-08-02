@@ -82,13 +82,17 @@
       <a name="label" val="value_yReg"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="0" loc="(1040,740)" name="Ground"/>
+    <comp lib="0" loc="(1040,700)" name="Ground"/>
     <comp lib="0" loc="(1050,550)" name="Ground">
       <a name="width" val="6"/>
     </comp>
     <comp lib="0" loc="(1060,630)" name="Splitter">
+      <a name="bit4" val="none"/>
+      <a name="bit5" val="none"/>
+      <a name="bit6" val="none"/>
+      <a name="bit7" val="none"/>
       <a name="facing" val="west"/>
-      <a name="fanout" val="8"/>
+      <a name="fanout" val="4"/>
       <a name="incoming" val="8"/>
     </comp>
     <comp lib="0" loc="(1070,380)" name="Tunnel">
@@ -309,11 +313,7 @@
     <wire from="(1020,700)" to="(1030,700)"/>
     <wire from="(1030,660)" to="(1030,700)"/>
     <wire from="(1030,660)" to="(1040,660)"/>
-    <wire from="(1040,670)" to="(1040,680)"/>
-    <wire from="(1040,680)" to="(1040,690)"/>
-    <wire from="(1040,690)" to="(1040,700)"/>
-    <wire from="(1040,700)" to="(1040,710)"/>
-    <wire from="(1040,710)" to="(1040,740)"/>
+    <wire from="(1040,670)" to="(1040,700)"/>
     <wire from="(1050,530)" to="(1110,530)"/>
     <wire from="(1050,540)" to="(1050,550)"/>
     <wire from="(1060,630)" to="(1100,630)"/>
