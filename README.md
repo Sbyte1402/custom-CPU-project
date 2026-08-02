@@ -37,9 +37,9 @@ The goal of this project is to learn and build from scratch a uP based on its ow
 |  Opcode  |  Mnemonic  |     Description       |
 | :------- | :--------- | :-------------------- |
 | `0x1100` |    `JUMP`  |  JMP #DIR             |
-| `0x1100` |    `JZ`    |  JZ #DIR              |
-| `0x1100` |   `FREE`   |                       |
-| `0x1100` |   `FREE`   |                       |
+| `0x1101` |    `JZ`    |  JZ #DIR              |
+| `0x1110` |   `FREE`   |                       |
+| `0x1111` |   `FREE`   |                       |
 
 ### Bits distribution
 #### Type R (Register - Register) -> ADD, SUB, AND, OR
