@@ -73,10 +73,21 @@
       <a name="fanout" val="8"/>
       <a name="incoming" val="8"/>
     </comp>
+    <comp lib="0" loc="(1070,380)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="result"/>
+      <a name="width" val="8"/>
+    </comp>
     <comp lib="0" loc="(1100,300)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="regSource"/>
       <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(1110,380)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="type" val="output"/>
+      <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(1110,540)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -153,9 +164,13 @@
       <a name="incoming" val="16"/>
       <a name="spacing" val="3"/>
     </comp>
+    <comp lib="0" loc="(380,270)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="ALU_src"/>
+    </comp>
     <comp lib="0" loc="(390,340)" name="Tunnel">
       <a name="facing" val="south"/>
-      <a name="label" val="XRegister"/>
+      <a name="label" val="X_register"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(390,500)" name="Tunnel">
@@ -174,9 +189,14 @@
       <a name="label" val="Opcode"/>
       <a name="width" val="4"/>
     </comp>
-    <comp lib="0" loc="(420,290)" name="Tunnel">
+    <comp lib="0" loc="(410,230)" name="Tunnel">
       <a name="facing" val="south"/>
-      <a name="label" val="YRegister"/>
+      <a name="label" val="Y_register"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(460,190)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="value_yReg"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(570,350)" name="Tunnel">
@@ -238,6 +258,10 @@
       <a name="select" val="2"/>
       <a name="width" val="8"/>
     </comp>
+    <comp lib="2" loc="(420,290)" name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="width" val="8"/>
+    </comp>
     <comp lib="2" loc="(620,630)" name="Demultiplexer">
       <a name="select" val="2"/>
     </comp>
@@ -278,6 +302,7 @@
     <wire from="(1040,700)" to="(1040,710)"/>
     <wire from="(1040,710)" to="(1040,740)"/>
     <wire from="(1060,630)" to="(1100,630)"/>
+    <wire from="(1070,380)" to="(1110,380)"/>
     <wire from="(1070,650)" to="(1070,800)"/>
     <wire from="(1070,650)" to="(1100,650)"/>
     <wire from="(1100,300)" to="(1110,300)"/>
@@ -319,10 +344,12 @@
     <wire from="(370,530)" to="(390,530)"/>
     <wire from="(370,560)" to="(390,560)"/>
     <wire from="(370,590)" to="(390,590)"/>
+    <wire from="(380,270)" to="(400,270)"/>
     <wire from="(390,340)" to="(390,400)"/>
     <wire from="(390,400)" to="(440,400)"/>
     <wire from="(400,440)" to="(400,470)"/>
     <wire from="(400,470)" to="(510,470)"/>
+    <wire from="(410,230)" to="(410,260)"/>
     <wire from="(410,430)" to="(410,460)"/>
     <wire from="(410,460)" to="(520,460)"/>
     <wire from="(420,290)" to="(420,300)"/>
@@ -330,7 +357,10 @@
     <wire from="(420,350)" to="(420,390)"/>
     <wire from="(420,350)" to="(440,350)"/>
     <wire from="(420,390)" to="(440,390)"/>
+    <wire from="(430,240)" to="(430,260)"/>
+    <wire from="(430,240)" to="(460,240)"/>
     <wire from="(440,300)" to="(440,350)"/>
+    <wire from="(460,190)" to="(460,240)"/>
     <wire from="(510,470)" to="(510,690)"/>
     <wire from="(510,470)" to="(740,470)"/>
     <wire from="(510,690)" to="(510,840)"/>
